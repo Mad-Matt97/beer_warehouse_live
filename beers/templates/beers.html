@@ -1,12 +1,9 @@
+{% extends 'base.html' %}
 {% load static %}
 
-<html>
 
-<head>
-<link href="{% static 'node_modules/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet"/>
-</head>
+{% block content %}
 
-<body>
 <p>
     {{ sample_var }}
 </p>
@@ -14,5 +11,4 @@
     Otra Cosa: {{ otra_cosa }}
 </p>
 <img src="{% static 'img/beers.jpg' %}">
-</body>
-</html>
+{% endblock %}
